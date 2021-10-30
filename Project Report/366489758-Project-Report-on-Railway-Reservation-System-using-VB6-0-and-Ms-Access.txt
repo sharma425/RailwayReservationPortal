@@ -1,0 +1,2523 @@
+               PROJECT REPORT
+                     ON
+                  RAILWAY RESERVATION
+                        SYSTEM
+                               (IRCTC)
+
+       IN PARTIAL FULFILLMENT OF REQUIREMENTS FOR THE
+                   AWARD OF THE DEGREE OF
+        BACHELOR OF COMPUTER APPLICATION.
+
+
+
+
+                         SESSION: 2015-2018
+
+PROJECT GUIDE:                     SUBMITTED BY:
+Mr. Ritesh Kandari
+                                   Prakhar Agrawal
+(Astt. Professor)
+                                   BCA- Vth - Sem
+(Dept. of Computer Science ,
+SCGIMT kashipur)                   ( SCGIMT kashipur)
+                           * PREFACE *
+   When a software succeeds-when it meets the need of people who use when it
+performs flawlessly over a long period of time, when it is easy to modify and easier
+to use – it can does change things foe the better. But when software fails – when its
+user are dissatisfied, when error prone, when it is difficult to change and even harder
+to use – bad things can and do happen. We all want to build software that make
+things better, avoiding the bad things that lurk in the shadow of failed efforts. To
+success, we need discipline when software is designed and build. We need an
+engineering approach. Computer make it easy to do lot of things, but most of thing
+that they make it easier to do don’t need to be done.
+
+
+   This project is a group effort that capitalizes on the easy computerization of the
+working of INDIAN RAILWAY RESERVATION for the new passenger.
+
+
+   This project has been developed after keeping in mind the software engineering
+approach i.e. it is the practice of sound engineering principles in order to obtain
+economical software that can be produced at reasonable cost, reliable software that
+is failure proof and functional that can work on real system or complaint to the
+requirements.
+
+
+   This project basically focuses on the addition of the details of the new
+passenger, generate the E-Tickets and many more.
+      * CANDIDATE DECLARATION *
+
+     This declaration has been undertaken as a partially fulfill of the
+requirement for the degree of Bachelor of computer Application of
+Kumaun University, Nainital.
+
+
+This project has not been copied or translated from any other    source. It
+presents a unique interface to work with. This project has not been present
+in any seminar or submitted else where for the award of any Degree of
+Diploma.
+
+
+
+
+                                       Prakhar Agrawal
+                                      B.C.A V Semester
+                                      Roll No. 1570330013
+        * ACKNOWLEDGEMENT *
+    I approach this important matter of acknowledgement
+through there line trying my best to give full credit where it is
+due. With deep gratitude I think Dr. Kewal Kumar (Director)
+who has been a constant source of inspiration to me.
+
+
+    I also like to think Mr. Munish Kumar Sharma (Principal)
+Who gave me voluble insights & guidance all through the course.
+We present our Sincere Thanks to our faculty & project incharge
+Mr. Ritesh Kandari (Lecturer B.C.A. department) without whose
+inspiration & Motivation this project would not have been a
+possibility. I also like to extent my sincere gratitude to my
+“family”.
+S.No.                         Contents
+ 1.     Title of the project
+ 2.     Introduction
+        2.1 Indian Railway Reservation System Introduction
+        2.2 Existing system
+        2.3 Proposed system
+ 3.     Tools & plateform
+ 4.     System requirement specification
+        4.1 Requirement analysis
+        4.2 Feasibility study
+ 5.     Abstract
+ 6.     System design
+        5.1 Data flow diagram
+        5.2 E.R.diagram
+        5.3 Database Design
+ 7      Screen display
+ 8      Source code of software
+ 9      Testing
+ 10     Maintenance
+ 11     Security of the system
+ 12     Future scope of the system
+ 13     Conclusion
+ 14     Bibliography
+* TITLE OF THE PROJECT *
+Proposed Railway Reservation System´ is developed for to automate the railway reservation
+system. It includes modules required to successfully operate railway reversion process
+smoothly. It has train master to add modify train information, Train schedule to enter train
+journey details include all the station name, arrival time and departure time. It includes
+automatic fare calculation as per the distance between two stations. Reservation module
+consist of automatic seat no and coach no allocation system. Daily schedule for updating of not
+confirm seat and coach no. All master like train master, train schedule, reservation fees, cancellation
+fees charges can be modified individually from frontend and changes reflect in all modules
+immediately. Therefore proposed
+Railway Reservation System
+
+´ has been designed to automate the process of railway for ticket reservation and back
+office activities. System can make the daily activities efficient and providing the fast
+response.
+
+The Indian Railways (IR) carries about 5.5 lacks passengers in reserved accommodations
+every day. The Computerized Passenger Reservation System(PRS) facilities the booking and
+cancellation of tickets from any of the 4000 terminals(i.e. PRS booking window all over the
+countries). These tickets can be booked or cancelled for journeys commencing in any part
+of India and ending in any other part, with travel time as long as 72hours and distance up to
+several thousand kilometers. The project of PRS was launched on 15th November 1985,
+over Northern Railway with the installation of Integrated Multiple Train Passenger
+Reservation System(IMPRESS), an online transaction processing system developed by
+Indian Railways in association with Computer Maintenance Corporation Ltd., at New Delhi.
+The objective was to provide reserved accommodations on any train from any counter,
+preparation of train charts and accounting of the money collected. The application was
+implemented in 1987 Mumbai,Chennai,Kolkata,Secunderabad subsequently.
+                     * EXISTING SYSTEM *
+The present system is manual & complex. It is very time consuming lengthy & includes
+a lot of manual work. A record of all the passenger has to be maintained manually (like
+name, age, passenger detail, agent record, etc). Updating the record of passenger is a
+Herculean task.
+
+                     Problems in the Existing System
+As everyone know that there is a big difference between Manual and a Computerized
+System. A Computer System is used for better performance in comparison to the
+Manual System or the Manual System is upgraded to Computer System due to various
+problems (like modification in the registers, wastage of time and space, wastage of
+stationary, etc.). Some problems present in the Existing Salary System are given below:
+
+
+            It was very complex and time consuming.
+            A lot of manual work has to be done.
+            Separate registers and a record has to be maintained.
+            Lot of calculations has to be done before generating the premium rate.
+            It was very expensive and requires a lot of space to retain the records.
+            It was very difficult for a newer agent to understand and to work
+              immediately in the existing system.
+            Complex for checking and record maintenance purposes.
+                 * PROPOSED SYSTEM *
+ The proposed system works according the requirement of the existing
+system. We can say that the proposed system fulfilled at the requirement of
+the existing system.
+
+
+        I have tried to fulfill all the requirement of the existing system. I
+have tried to remove the entire unnecessary thing which was used by the
+existing system. I have designed this system at variance of existing system.
+
+
+      There is some points to clarify the meanings of proposed system:-
+
+
+                This system saves the time.
+
+
+                This is a user friendly system, anybody can understand.
+
+
+                Faster accessibility is another task of this system.
+
+
+                Exotic looking.
+       * TOOLS & PLATFORM *
+This application is developed using the following tools:
+
+           Window 10, as operating system.
+          Visual Basic 6.0 as the front end application development tool.
+           Ms Access as the back end tool to store data.
+           Crystal report software ( to generate crystal report)
+
+
+
+1. WINDOWS 10
+       The Microsoft Window 10 operating system is a 64-bit multi-tasking O.S. for
+modern microprocessors. Key goal for the system are portability, security, portable
+O.S. Interface (POSIX) or IEEE std. 1003.1 compliance, multiprocessor support,
+extensibility, international support, and compatibility with MS-Dos and MS-Windows
+applications. Two versions of 10 are Windows 10 workstation and Windows 10
+Server. They are same kernel and operating system code, but Windows 10 Server is
+configured for Client-Server application and an act as application server on Netware
+and Microsoft LANs.
+
+
+
+2. FRONTEND: VISUAL BASIC 6.0 PROFESSIONAL EDITION
+In this software the VISUAL BASIC 6.0 PROFESSIONAL edition is used as frontend.
+The Professional edition provides computer professionals with a full-featured set of
+tools for developing solutions for others. Microsoft VISUAL BASIC, the fastest and
+easiest way to create applications for Microsoft Windows®.and provide a complete set
+of tools to simplify rapid application development.
+
+
+THE GUI FEATURE
+The "Visual" part refers to the method used to create the graphical user interface
+(GUI). Rather than writing numerous lines of code to describe the appearance and
+location of interface elements, visual basic provide pre-built objects to place on screen
+which create effective user interface.
+
+
+
+3. BACKEND: MS ACCESS
+
+MS access is used as backend tool to create and manage databases with visual basic as
+front-end applications. MS access is an example of DBMS (data base management
+system). A database is collection of related information stored so that it is available to
+many users for different purposes. The data control component of the visual basic is
+used for MS access connectivity.
+
+
+Data access Objects (DAO)
+
+Data access Objects (DAO) is designed to be an easy-to-use application-level interface
+to any OLE DB data provider, including relational and non-relational databases, DAO
+uses the Microsoft Jet database engine to provide a set of data access objects: database
+objects, tabledef and querydef objects, recordset objects, and others. DAO works best
+with .MDB files like those created by Microsoft Access. Data Access Objects (DAO)
+provides data access to native Microsoft Jet engine databases (.mdb files) and any
+ODBC data source.
+
+
+The general characteristics of DAO are:
+               Ease of use.
+               High performance.
+               Programmatic control of cursors.
+               Complex cursor types, including batch and server- and client-side cursors.
+               Ability to return multiple result sets from a single query.
+               Synchronous, asynchronous, or event-driven query execution.
+               Reusable, property-changeable objects.
+               Advanced recordset cache management.
+               Flexibility — it works with existing database technologies and all OLE DB providers.
+           * REQUIREMENT ANALYSIS *
+
+A complete understanding of the requirement is essential for the success of the software
+development efforts. The analysis task is a process of discovery, refinement, modeling and
+specification. The software scope, initially established by the system engineer and refine
+during software project planning, is refining in detail. Model of required data, information
+and control flow, and operational behavior are created.
+
+     Requirement Analysis
+              Requirement analysis enables the system engineer to specify software
+    function and performance, indicate software’s interface with other system elements,
+    and establish constraints that software must meet. Requirement analysis allows the
+    software engineer to refine the software allocation and build model of data,
+    functional, behavioral domains that will be treated by software. Requirement analysis
+    provides the software designer with models that can be translated into data,
+    architectural, interface, and procedural design. Finally the requirements specification
+    provides the developer and the customer with the means to access quality once
+    software is build.
+
+    Requirement analysis may be divided into five areas of effort:
+    (1) The first is the Problam recognition (user requirements) such as the followings:
+
+               What type of input/output user want?
+
+               What type of report user want to generate?
+
+               What type of interface user want?
+
+            This type of many questions arise at requirement phase.
+(2) Problam Evaluation and Synthasis is the second area of effort for analysts.
+
+(3) The third area of effort is Modeling. Data modeling answers a set of specific
+questions that are relevant to any data processing application. For example:
+
+           What are the primary data objects to be processed?
+
+           What is the composition of each data object?
+
+           What attributes describe the object?
+
+           What are the relationships between the objects and the processes that
+             transform them?
+
+(4) The fourth area of effort is the Specification
+
+(5) The last area of effort is the Review.
+
+
+
+      System analysis is therefore, the process of gathering and interpreting facts,
+diagnosing problem and using the information to recommended improvement in the
+system. System analysis is conducted with the following objects in mind:
+
+       Identify the organization need.
+
+       Evaluate the system concept for feasibility.
+
+       Perform economic and technical analysis.
+
+       Allocate function to hardware, software, people, database and other system
+          element.
+
+       Establish cost and schedule constraint.
+
+       Create a system definition that forms the foundation for all subsequent
+          engineering work.
+       System analysis refers to the process of examining a situation with the
+         intent of improving it through better procedures and methods.
+
+
+
+         The main objective of the system is to provide comprehensive, online,
+reliable and fast information service to all the receipt activities in the organization.
+The other objectives include: -
+
+       User friendliness and ease of work.
+
+       Immediate response to all type of queries.
+
+       Generation of reports.
+
+       Flexibility to incorporate various levels of security measures.
+
+       Expandability of the system when the plant under goes renovation in the
+         production
+
+
+
+         System design is the process of planning a new system to either replace or
+complement the existing system. But before the planning is done, the old system
+must be thoroughly understood and the requirement must be determined.
+
+
+
+
+              * FEASIBILITY STUDY *
+      All projects are feasible – given unlimited resources and infinite time!
+Unfortunately, the development of a computer based system or product is more likely
+plagued by scarcity of resources and difficult delivery dates. It is both necessary and
+prudent to evaluate the feasibility of a project at the earliest possible time, month or
+years of effort, thousands or millions of dollars, and untold professional
+embarrassment can be averted if an ill-conceived system is recognized early in the
+definition phase.
+
+      Feasibility and risk analysis are related to each other in many ways. If the
+project risk is great, the feasibility of producing quality software is reduced. However
+we concentrate our attention on four primary areas of interest:
+
+
+ ECONOMIC FEASIBILITY:
+
+      An evaluation of software development cost weighed against the ultimate
+income or benefit derived from the development system or product.
+
+
+
+TECHNICAL FEASIBILITY:
+
+      A study of function, performance, and constraints that may affect the ability to
+achieve an acceptable system.
+
+
+
+LEGAL FEASIBILITY:
+
+      A determination of any infringement, violation, or liability that could result
+from development of the system.
+
+
+
+OPERATIONAL FEASIBILITY:
+
+      Will the system be used if it is developed and implemented? Will there be
+resistance from user that will undermine the possible application benefits?
+
+ALTERNATIVES:
+      An evaluation of alternative approaches to the development of the system or
+product.
+
+      A feasibility study is not warranted for a system in which economic
+justification is obvious, technical risk is low, few legal problems are expected and no
+reasonable alternative exists. However, if any of the proceeding conditions fail, a
+study of that area should be conducted.
+
+      Economic justification is generally the “bottom-line” consideration for most
+systems. Economic justification includes a broad range of concern that include cost
+benefit analysis, long term corporate income strategies, impact on other profit
+concern or products, cost of resources needed for development, and potential market
+growth.
+
+      Technical feasibility is frequently most difficult area to access at this stage of
+the product engineering process. Because objective, function and performance are
+somewhat hazy, anything seems possible if “right” assumptions are made. It is
+essential that the process of analysis and definition be con concrete in parallel with in
+an assessment of technical feasibility. In this way concrete specification may be
+judged, as they are determined.
+
+      The considerations that are normally associated with technical feasibility
+include:
+
+
+
+ DEVELOPMENT RISK:
+
+Can the system element be design so the necessary function and the performance are
+achieved within the constraints uncovered during analysis?
+
+ RESOURCE AVAILABILITY:
+Are skilled stuff available to develop the system element in question? Are other
+necessary resource (hardware and software) are available to build the system?
+
+  TECHNOLOGY:
+
+Has the relevant technology progressed to a state that will support the system?
+      Developers of computer-based systems are optimists by nature. However,
+during an evaluation of technical feasibility, a cynical, if not pessimistic, attitude
+should prevail. Misjudgment at this stage can be disastrous.      Legal      feasibility
+encompasses a broad range of concerns that include contracts, liability, infringement,
+and myriad other traps frequently unknown to technical stuff. The degree of which
+alternatives are considered is often limited by cost and time constraints.
+
+ REQUEST APPROVAL:
+It is not necessary that all requested projects are desirable or feasible, because
+
+requested projects only initialize when they are feasible in each and every aspect. If
+the cost of project is more than the cost of benefit after project releases then the
+project request is dropped.
+      Under this feasibility study the candidate system “LIFE INSURANCE
+CORPORATION OF INDIA” is feasible in each and every aspect. In other words
+we can say that the candidate system is technically feasible, economically feasible,
+Operational feasible and legally feasible.
+               *ABSTRACT*
+    In this emerging world of computers all most
+all manual system automated and computerized but
+maximum of them are so complex and a common
+user is unable to operate that software system. We
+are developing the “Online Railway Reservation
+System” to model the present system and to remove
+the drawbacks. This project explores how computer
+technology can be used to solve the problem of
+user.
+
+    We specifically props way to computerize the
+administration and engineering offices of Indian
+Railway Online. A high speed communication
+network needs to be developed for interconnecting
+the offices of railways. This same communication
+network can be used to provide high speed internet
+connection to the public and leas out network
+capacity to internet service providers.
+                   *DATA FLOW DIAGRAM*
+
+  It displays the system requirements in a graphical form. It functionally
+  decomposes the requirement specification down to the lowest level of detail.
+   DFD describes the flow of data within a given set of system. A DFD is
+  generally made up of entities, processes, data stores and flow lines. Entities
+  describe the source or the destination, processes describe the transformation of
+  data, data store is used for storage purpose and flow lines depict the data in
+  motion.
+
+
+DFD serves the following purposes: -
+
+       It provides an integration of how the data are transformed as we move
+            through the system.
+       It helps to depict the function and sub function that transforms the
+            data flow.
+       It provides additional information that is used during analysis of
+            Information domain and serves as basis for modeling of functions.
+
+
+      Hence, the entire data flow; their transformation and storage can be properly
+                                 analyzed in a DFD
+              Request
+
+                        Server
+System User                      Server
+                                 Response
+
+
+
+              LEVEL 1 DFD OF ORRS
+LEVEL 2 DFD OF ORRS
+* E-R- DIAGRAM OF RAILYWAY
+   RESERVATION SYSTEM *
+
+
+
+
+                             *
+LOGIN / SIGNUP TABLE DATABASE
+RESERVATION TABLE
+RESERVATION BY DELHI
+RESERVATION OF DELHI
+      * SCREEN DISPLAY *
+                     SPLASH FORM
+
+
+
+
+This is the splash form. It will show the loading process for
+required information to run the software.
+Private Sub Form_Load()
+Timer1.Interval = 50
+End Sub
+
+Private Sub Timer1_Timer()
+ProgressBar1.Value = ProgressBar1.Value + 1
+Select Case ProgressBar1.Value
+Case "10"
+Label1.Caption = "LOADING..."
+Case "35"
+Label1.Caption = "OPENING DATABASE..."
+Case "65"
+Label1.Caption = "CHECKING CONNECTIVITY..."
+Case "90"
+Label1.Caption = " Created By--PRAKHAR AGRAWAL"
+Case "100"
+Unload Me
+ABOUTUS.Show
+End Select
+
+End Sub
+ABOUT US FORM
+Private Sub Image3_Click()
+LOGIN.Show
+Unload Me
+End Sub
+LOGIN FORM
+Dim con As New ADODB.Connection
+Dim rs As New ADODB.Recordset
+Dim i As Integer
+Dim chk As Integer
+
+Private Sub cmdOK_Click()
+chk = True
+  If Combo1.Text = "" And txtPassword.Text = "" Or Combo1.Text
+= "" Or txtPassword.Text = "" Then
+     MsgBox ("You cannot blank User Name or Password"),
+vbCritical, "Error"
+  Else
+   Adodc1.Recordset.MoveFirst
+     For i = 0 To Adodc1.Recordset.RecordCount - 1
+       If Combo1.Text = Adodc1.Recordset.Fields("Username") And
+txtPassword.Text = Adodc1.Recordset.Fields("Password") Then
+          chk = False
+          MDIForm1.Show
+          Me.Hide
+          Exit For
+       Else
+          Adodc1.Recordset.MoveNext
+       End If
+     Next
+       If chk = True Then
+          MsgBox ("Please enter the correct username and
+password"), vbExclamation, "Error"
+          Combo1.Text = ""
+          txtPassword.Text = ""
+          Combo1.SetFocus
+       End If
+  End If
+
+
+End Sub
+Private Sub Combo1_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or KeyAscii
+= Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or (KeyAscii
+>= Asc("A") And KeyAscii <= Asc("Z") Or KeyAscii = Asc(vbBack)))
+Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Command1_Click()
+Dialog.Show
+Me.Hide
+
+End Sub
+
+Private Sub Command2_Click()
+REGISTRATION.Show
+Me.Hide
+End Sub
+
+Private Sub Form_Load()
+Set con = New ADODB.Connection
+con.Provider = "Microsoft.Jet.OLEDB.4.0"
+con.ConnectionString = "Data Source=" & App.Path &
+"\Database2.mdb"
+con.Open
+rs.Open "select distinct Username from loginsignup", con,
+adOpenDynamic, adLockOptimistic, adCmdText
+While rs.EOF = False
+Combo1.AddItem rs.Fields(0)
+rs.MoveNext
+Wend
+rs.Close
+End Sub
+
+Private Sub Timer1_Timer()
+If (Label3.Left + Label3.Width) <= 0 Then
+   Label3.Left = Me.Width
+   End If
+
+  Label3.Left = Label3.Left - 25
+End Sub
+
+Private Sub Timer2_Timer()
+If (Image6.Top + Image6.Width) <= 0 Then
+   Image6.Top = Me.Width
+   End If
+
+  Image6.Top = Image6.Top - 25
+
+End Sub
+
+Private Sub Timer3_Timer()
+If (Label4.Left + Label4.Width) <= 0 Then
+   Label4.Left = Me.Width
+   End If
+
+  Label4.Left = Label4.Left - 25
+
+End Sub
+REGISTRATION FORM
+Private Sub Combo1_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+
+Private Sub Combo2_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Combo6_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Combo7_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Command1_Click()
+
+
+Adodc2.Recordset.AddNew
+Adodc2.Recordset.Fields("Username") = Text1.Text
+Adodc2.Recordset.Fields("Password") = Text2.Text
+Adodc2.Recordset.Fields("SQuestion") = Combo1.Text
+Adodc2.Recordset.Fields("Gender") = Combo2.Text
+Adodc2.Recordset.Fields("YAns") = Text3.Text
+Adodc2.Recordset.Fields("Martial Status") = Combo7.Text
+Adodc2.Recordset.Fields("Occupation") = Combo6.Text
+Adodc2.Recordset.Fields("Date of Birth") = DTPicker1.Value
+Adodc2.Recordset.Fields("Aadhaar Card No") = Text4.Text
+Adodc2.Recordset.Fields("E-Mail") = Text5.Text
+Adodc2.Recordset.Fields("Mobile No") = Text6.Text
+Adodc2.Recordset.Fields("Address") = Text7.Text
+
+Adodc2.Recordset.Fields("Pin Code") = Text8.Text
+
+Adodc2.Recordset.Save
+If Text1.Text = "" Or Text2.Text = "" Or Text3.Text = "" Or
+Text6.Text = "" Or Text7.Text = "" Or Text8.Text = "" Or
+Combo1 = "" Or Combo2 = "" Or Combo7 = "" Or Combo6
+= "" Or DTPicker1 = "" Then
+MsgBox "Some * fields are left Blank, Please fill Them",
+vbExclamation, "Error"
+Exit Sub
+End If
+MsgBox ("Record is successfully submitted"),
+vbMsgBoxSetForeground, "Success"
+Form3.Show
+Unload Me
+End Sub
+
+Private Sub Command2_Click()
+Text1.Text = ""
+Text2.Text = ""
+Text5.Text = ""
+Text6.Text = ""
+Text7.Text = ""
+
+Text3.Text = ""
+Text4.Text = ""
+Text5.Text = ""
+
+Text8.Text = ""
+
+Combo1.Text = ""
+Combo2.Text = ""
+Combo6.Text = ""
+Combo7.Text = ""
+
+Text1.SetFocus
+End Sub
+
+Private Sub Form_Load()
+Combo1.AddItem "What is your pets name?"
+Combo1.AddItem "Who was your childhood hero?"
+Combo1.AddItem "What is your favorite pass-time?"
+Combo1.AddItem "What make was your Favorite sports
+team?"
+Combo1.AddItem "What is your favorite clothes brand?"
+Combo1.AddItem "What was the name of your first school"
+Combo1.AddItem "Name the person whom u want's to
+copy?"
+Combo2.AddItem "Male"
+Combo2.AddItem "Female"
+
+Combo6.AddItem "Government"
+Combo6.AddItem "Public"
+Combo6.AddItem "Private"
+Combo6.AddItem "Professional"
+Combo6.AddItem "Employed"
+Combo6.AddItem "Student"
+Combo6.AddItem "Other"
+Combo7.AddItem "Married"
+Combo7.AddItem "Unmarried"
+Combo7.AddItem "Divorced"
+End Sub
+
+Private Sub Text1_KeyPress(KeyAscii As Integer)
+
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text10_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text4_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+Private Sub Text6_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+Private Sub Text8_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+MDIForm
+Option Explicit
+
+Private Sub newreg_Click()
+Form13.Show
+Unload Me
+
+End Sub
+
+Private Sub Picture1_Click()
+
+End Sub
+
+Private Sub Abtus_Click()
+ABOUTUS.Show
+Me.Hide
+
+End Sub
+
+Private Sub contact_Click()
+Contactus.Show
+Me.Hide
+
+End Sub
+
+Private Sub exit_Click()
+Dialog.Show
+Me.Hide
+
+End Sub
+Private Sub logout_Click()
+LOGIN.Show
+Me.Hide
+
+End Sub
+
+Private Sub TRP_Click()
+Form3.Show
+Unload Me
+End Sub
+FAVORABLE JOURNEY FORM
+        (FORM 3)
+Dim con As New ADODB.Connection
+Dim rs As New ADODB.Recordset
+Dim rs1 As New ADODB.Recordset
+Dim rs2 As New ADODB.Recordset
+Private Sub Combo1_Click()
+
+Combo2.Clear
+rs.Open "select distinct Destination from delhi where
+Source='" & Combo1.Text & "'", con, adOpenDynamic,
+adLockOptimistic, adCmdText
+While rs.EOF = False
+Combo2.AddItem rs.Fields(0)
+rs.MoveNext
+Wend
+rs.Close
+
+End Sub
+
+
+Private Sub Combo1_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+Private Sub Combo2_GotFocus()
+If Combo1.Text = "" Then
+MsgBox "Please select the train to move forward ",
+vbExclamation, "Error"
+Combo1.SetFocus
+End If
+End Sub
+
+Private Sub Combo2_KeyPress(KeyAscii As Integer)
+If KeyAscii = 13 Then
+MSHFlexGrid1.Visible = True
+rs.Open "select * from delhi where Source='" & Combo1.Text
+& "' and Destination='" & Combo2.Text & "'", con,
+adOpenDynamic, adLockOptimistic, adCmdText
+Set Form3.MSHFlexGrid1.DataSource = rs
+rs.Close
+Else
+End If
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+Private Sub Combo3_Click()
+
+search.SetFocus
+
+
+End Sub
+
+Private Sub Combo3_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Combo4_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+Private Sub Command1_Click()
+
+End Sub
+
+Private Sub Command2_Click()
+Combo1.Text = ""
+Combo2.Text = ""
+Combo4.Text = ""
+End Sub
+
+Private Sub DTPicker1_GotFocus()
+If Combo2.Text = "" Then
+MsgBox "Please select the Train to move forward ",
+vbExclamation, "Error"
+Combo2.SetFocus
+End If
+End Sub
+
+
+
+Private Sub DTPicker2_CallbackKeyDown(ByVal KeyCode
+As Integer, ByVal Shift As Integer, ByVal CallbackField As
+String, CallbackDate As Date)
+DTPicker1 = DTPicker2
+
+End Sub
+
+Private Sub Form_Load()
+
+Set con = New ADODB.Connection
+con.Provider = "Microsoft.Jet.OLEDB.4.0"
+con.ConnectionString = "Data Source=" & App.Path &
+"\Database2.mdb"
+con.Open
+
+rs2.Open "select distinct Source from delhi", con,
+adOpenDynamic, adLockOptimistic, adCmdText
+While rs2.EOF = False
+Combo1.AddItem rs2.Fields(0)
+rs2.MoveNext
+Wend
+rs2.Close
+End Sub
+
+
+
+Private Sub Form_Unload(Cancel As Integer)
+con.Close
+End Sub
+
+
+Private Sub Picture3_Click(Index As Integer)
+
+If Combo3.Text = "" Or Combo2.Text = "" Or Combo1.Text
+= "" Or Label9 = "" Then
+MsgBox " Fill Full Details ", vbCritical, "Error"
+Combo1.SetFocus
+Else
+If Not Combo3.Text = "" Then
+Form2.Label3 = Label9
+Form2.Label5 = Label10
+Form2.Label13 = DTPicker1
+Form2.Label9 = Label11
+Form2.Label11 = Combo3.Text
+Form2.Label13 = Label12
+Form5.Label22 = Label9
+Form5.Label13 = Label10
+Form5.Label23 = DTPicker1
+Form5.Label24 = Label11
+Form5.Label21 = Combo3.Text
+Form5.Label20 = Label12
+
+Form5.Label55 = Text1.Text
+Form11.Label22 = Label9
+Form11.Label28 = Label10
+Form11.Label29 = DTPicker1
+Form11.Label30 = Text5.Text
+Form11.Label24 = Label11
+Form11.Label25 = Combo3.Text
+
+Form12.Label22 = Label9
+Form12.Label28 = Label10
+Form12.Label29 = DTPicker1
+Form12.Label30 = Text5.Text
+Form12.Label24 = Label11
+Form12.Label25 = Combo3.Text
+
+Form12.Label26 = Text4.Text
+Form5.Label21 = Combo3.Text
+Form2.Show
+Unload Me
+Unload Me
+End If
+End If
+End Sub
+
+Private Sub search_Click()
+If Combo1.Text <> "" And Combo2.Text <> "" Then
+Label10 = Combo1.Text
+Label11 = Combo2.Text
+End If
+rs.Open "select * from delhi where Source='" & Combo1.Text
+& "' and Destination='" & Combo2.Text & "'", con,
+adOpenDynamic, adLockOptimistic, adCmdText
+Set Label9.DataSource = rs
+Set Text2.DataSource = rs
+Set Text4.DataSource = rs
+Set Text5.DataSource = rs
+Text2.DataField = "Availiblity"
+Text4.DataField = "PNR No"
+Text5.DataField = "Transaction _ID"
+Form5.Label58 = Text2.Text
+Label9.DataField = "TrainName"
+
+
+If Combo1.Text = " " And Combo2.Text = "" And
+Combo4.Text = "" And DTPicker1 = "" Or Combo1.Text = "
+" Or Combo2.Text = "" Or Combo4.Text = "" Or DTPicker1
+= "" Then
+MsgBox (" Fill Full Details "), vbCritical, "Error"
+Combo1.Text = ""
+Combo2.Text = ""
+Combo4.Text = ""
+Combo1.SetFocus
+
+End If
+Label12 = Combo4.Text
+Label13 = DTPicker1
+
+End Sub
+
+
+Private Sub Timer1_Timer()
+Label7.Caption = Date
+Label8.Caption = Time
+
+End Sub
+PASSENGER DETAIL
+Dim con As New ADODB.Connection
+Dim rs As New ADODB.Recordset
+Dim rs1 As New ADODB.Recordset
+Dim rs2 As New ADODB.Recordset
+
+Private Sub Adodc1_Click()
+
+End Sub
+
+Private Sub Combo1_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+
+Private Sub Combo1_LostFocus()
+Picture2.Visible = True
+
+End Sub
+
+Private Sub Combo2_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Combo2_LostFocus()
+If Text2.Text >= 60 Then
+Check1.Value = 1
+Check1.Visible = True
+Form5.Label45 = "Yes"
+
+Else: Check1.Value = False
+Check1.Visible = True
+Form5.Label45 = "No"
+End If
+If Not Combo2 = "" Then
+Frame1.Visible = False
+End If
+
+End Sub
+
+Private Sub Combo3_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Combo4_Click()
+If Text3.Text = "" Or Combo3 = "" Then
+MsgBox " Please fill your full Details in S.No '2'",
+vbExclamation, "Error"
+Text3.SetFocus
+End If
+End Sub
+
+Private Sub Combo4_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+Private Sub Combo4_LostFocus()
+If Text4.Text >= 60 Then
+Check2.Value = 1
+Check2.Visible = True
+Form5.Label41 = "Yes"
+Else: Check2.Value = False
+Check1.Visible = True
+Form5.Label41 = "No"
+End If
+If Not Combo4 = "" Then
+Frame2.Visible = False
+Form5.Frame1.Visible = False
+End If
+If Not Combo4 = "" Then
+Frame2.Visible = False
+Form11.Frame1.Visible = False
+End If
+If Not Combo4 = "" Then
+Frame2.Visible = False
+Form12.Frame1.Visible = False
+End If
+
+End Sub
+
+Private Sub Combo5_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+Private Sub Combo6_Click()
+If Text5.Text = "" Or Combo5 = "" Then
+MsgBox " Please fill your full Details in S.No '3'",
+vbExclamation, "Error"
+Text5.SetFocus
+End If
+End Sub
+
+Private Sub Combo6_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+
+Private Sub Combo6_LostFocus()
+If Text6.Text >= 60 Then
+Check4.Value = 1
+Check4.Visible = True
+Form5.Label37 = "Yes"
+Else: Check4.Value = False
+Check4.Visible = True
+Form5.Label37 = "No"
+
+End If
+If Not Combo6 = "" Then
+Frame3.Visible = False
+Form5.Frame2.Visible = False
+End If
+If Not Combo6 = "" Then
+Frame3.Visible = False
+Form11.Frame2.Visible = False
+End If
+If Not Combo6 = "" Then
+Frame3.Visible = False
+Form12.Frame2.Visible = False
+End If
+
+End Sub
+
+Private Sub Combo7_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+Private Sub Combo8_Click()
+If Text7.Text = "" Or Combo7 = "" Then
+MsgBox " Please fill your full Details in S.No '2'",
+vbExclamation, "Error"
+Text7.SetFocus
+End If
+End Sub
+
+Private Sub Combo8_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Combo8_LostFocus()
+If Text8.Text >= 60 Then
+Check5.Value = 1
+Check5.Visible = True
+Form5.Label33 = "Yes"
+Else: Check5.Value = False
+Check5.Visible = True
+Form5.Label33 = "No"
+End If
+If Combo8 = "" Then
+MsgBox " Fill the column", vbQuestion, "Error"
+Combo8.SetFocus
+End If
+Form5.Frame3.Visible = False
+Form11.Frame3.Visible = False
+Form12.Frame3.Visible = False
+
+End Sub
+
+
+
+
+Private Sub Command1_Click()
+Text1.Text = ""
+Text2.Text = ""
+Text3.Text = ""
+Text4.Text = ""
+Text5.Text = ""
+Text6.Text = ""
+Text7.Text = ""
+Text8.Text = ""
+Combo1.Text = ""
+Combo2.Text = ""
+Combo3.Text = ""
+Combo4.Text = ""
+Combo5.Text = ""
+Combo6.Text = ""
+Combo7.Text = ""
+Combo8.Text = ""
+Check1.Value = 2
+Check2.Value = 2
+Check4.Value = 2
+Check5.Value = 2
+End Sub
+
+
+
+
+Private Sub Command5_Click()
+
+End Sub
+
+Private Sub Form_Load()
+Set con = New ADODB.Connection
+con.Provider = "Microsoft.Jet.OLEDB.4.0"
+con.ConnectionString = "Data Source=" & App.Path &
+"\Database2.mdb"
+con.Open
+rs.Open "select distinct Source from delhi", con,
+adOpenDynamic, adLockOptimistic, adCmdText
+
+rs.MoveNext
+
+rs.Close
+
+
+
+Combo1.AddItem "Male"
+Combo1.AddItem "Female"
+Combo2.AddItem "Upper"
+Combo2.AddItem "Middle"
+Combo2.AddItem "Lower"
+Combo2.AddItem "Side Upper"
+Combo2.AddItem "Side Lower"
+Combo3.AddItem "Male"
+Combo3.AddItem "Female"
+Combo4.AddItem "Upper"
+Combo4.AddItem "Middle"
+Combo4.AddItem "Lower"
+Combo4.AddItem "Side Upper"
+Combo4.AddItem "Side Lower"
+Combo5.AddItem "Male"
+Combo5.AddItem "Female"
+Combo6.AddItem "Upper"
+Combo6.AddItem "Middle"
+Combo6.AddItem "Lower"
+Combo6.AddItem "Side Upper"
+Combo6.AddItem "Side Lower"
+Combo7.AddItem "Male"
+Combo7.AddItem "Female"
+Combo8.AddItem "Upper"
+Combo8.AddItem "Middle"
+Combo8.AddItem "Lower"
+Combo8.AddItem "Side Upper"
+Combo8.AddItem "Side Lower"
+
+End Sub
+
+Private Sub Picture2_Click()
+rs.Open "select * from delhi where Source='" & Label5 & "'
+and Destination='" & Label9 & "'", con, adOpenDynamic,
+adLockOptimistic, adCmdText
+Set Text16.DataSource = rs
+Set Text12.DataSource = rs
+Text16.DataField = "Senior Citizen"
+Text12.DataField = "Adult"
+rs.Close
+
+Form5.Label32 = Text1.Text
+Form5.Label48 = Text2.Text
+Form5.Label47 = Combo1.Text
+Form5.Label46 = Combo2.Text
+Form5.Label31 = Text3.Text
+Form5.Label44 = Text4.Text
+Form5.Label43 = Combo3.Text
+Form5.Label42 = Combo4.Text
+Form5.Label30 = Text5.Text
+Form5.Label40 = Text6.Text
+Form5.Label39 = Combo5.Text
+Form5.Label38 = Combo6.Text
+Form5.Label29 = Text7.Text
+Form5.Label36 = Text8.Text
+Form5.Label35 = Combo7.Text
+Form5.Label34 = Combo8.Text
+Form11.Label45 = Text1.Text
+Form11.Label48 = Text2.Text
+Form11.Label44 = Text3.Text
+Form11.Label46 = Text4.Text
+Form11.Label43 = Text5.Text
+Form11.Label42 = Text6.Text
+Form11.Label39 = Text7.Text
+Form11.Label38 = Text8.Text
+Form11.Label49 = Combo1.Text
+Form11.Label47 = Combo3.Text
+Form11.Label41 = Combo5.Text
+Form11.Label37 = Combo7.Text
+Form12.Label45 = Text1.Text
+Form12.Label48 = Text2.Text
+Form12.Label44 = Text3.Text
+Form12.Label46 = Text4.Text
+Form12.Label43 = Text5.Text
+Form12.Label42 = Text6.Text
+Form12.Label39 = Text7.Text
+Form12.Label38 = Text8.Text
+Form12.Label49 = Combo1.Text
+Form12.Label47 = Combo3.Text
+Form12.Label41 = Combo5.Text
+Form12.Label37 = Combo7.Text
+Form12.Label56 = Text10.Text
+Form12.Label19 = Text9.Text
+
+
+
+If Check1.Value = 1 And Check2.Value = 1 And Check4.Value
+= 1 And Check5.Value = 1 Then
+Text15.Text = 4
+Else
+If Check1.Value = 1 And Check2.Value = 1 And Check4.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check1.Value = 1 And Check2.Value = 1 And Check5.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check1.Value = 1 And Check4.Value = 1 And Check5.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check1.Value = 1 And Check4.Value = 1 And Check2.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check1.Value = 1 And Check5.Value = 1 And Check4.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check1.Value = 1 And Check5.Value = 1 And Check2.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check4.Value = 1 And Check1.Value = 1 And Check2.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check4.Value = 1 And Check1.Value = 1 And Check5.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check4.Value = 1 And Check2.Value = 1 And Check5.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check4.Value = 1 And Check2.Value = 1 And Check1.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check4.Value = 1 And Check5.Value = 1 And Check1.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check4.Value = 1 And Check5.Value = 1 And Check2.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check5.Value = 1 And Check1.Value = 1 And Check2.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check5.Value = 1 And Check1.Value = 1 And Check4.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check5.Value = 1 And Check2.Value = 1 And Check4.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check5.Value = 1 And Check2.Value = 1 And Check1.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check5.Value = 1 And Check4.Value = 1 And Check1.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check5.Value = 1 And Check4.Value = 1 And Check2.Value
+= 1 Then
+Text15.Text = 3
+Else
+If Check1.Value = 1 And Check2.Value = 1 Then
+Text15.Text = 2
+Else
+If Check1.Value = 1 And Check4.Value = 1 Then
+Text15.Text = 2
+Else
+If Check1.Value = 1 And Check5.Value = 1 Then
+Text15.Text = 2
+Else
+If Check4.Value = 1 And Check2.Value = 1 Then
+Text15.Text = 2
+Else
+
+If Check4.Value = 1 And Check1.Value = 1 Then
+Text15.Text = 2
+Else
+If Check4.Value = 1 And Check5.Value = 1 Then
+Text15.Text = 2
+Else
+If Check5.Value = 1 And Check1.Value = 1 Then
+Text15.Text = 2
+Else
+If Check5.Value = 1 And Check4.Value = 1 Then
+Text15.Text = 2
+Else
+If Check5.Value = 1 And Check2.Value = 1 Then
+Text15.Text = 2
+Else
+If Check1.Value = 1 Or Check2.Value = 1 Or Check4.Value =
+1 Or Check5.Value = 1 Then
+Text15.Text = 1
+Else
+Text15.Text = 0
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+If Check1.Value = 0 And Check2.Value = 0 And Check4.Value
+= 0 And Check5.Value = 0 Then
+Text11.Text = 4
+Else
+If Check1.Value = 0 And Check2.Value = 0 And Check4.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check1.Value = 0 And Check2.Value = 0 And Check5.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check1.Value = 0 And Check4.Value = 0 And Check5.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check1.Value = 0 And Check4.Value = 0 And Check2.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check1.Value = 0 And Check5.Value = 0 And Check4.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check1.Value = 0 And Check5.Value = 0 And Check2.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check4.Value = 0 And Check1.Value = 0 And Check2.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check4.Value = 0 And Check1.Value = 0 And Check5.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check4.Value = 0 And Check2.Value = 0 And Check5.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check4.Value = 0 And Check2.Value = 0 And Check1.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check4.Value = 0 And Check5.Value = 0 And Check1.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check4.Value = 0 And Check5.Value = 0 And Check2.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check5.Value = 0 And Check1.Value = 0 And Check2.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check5.Value = 0 And Check1.Value = 0 And Check4.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check5.Value = 0 And Check2.Value = 0 And Check4.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check5.Value = 0 And Check2.Value = 0 And Check1.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check5.Value = 0 And Check4.Value = 0 And Check1.Value
+= 0 Then
+Text11.Text = 3
+Else
+If Check5.Value = 0 And Check4.Value = 0 And Check2.Value
+= 0 Then
+Text11.Text = 3
+Else
+
+If Check1.Value = 0 And Check2.Value = 0 Then
+Text11.Text = 2
+Else
+If Check1.Value = 0 And Check4.Value = 0 Then
+Text11.Text = 2
+Else
+If Check1.Value = 0 And Check5.Value = 0 Then
+Text11.Text = 2
+Else
+If Check2.Value = 0 And Check5.Value = 0 Then
+Text11.Text = 2
+Else
+If Check2.Value = 0 And Check4.Value = 0 Then
+Text11.Text = 2
+Else
+If Check2.Value = 0 And Check1.Value = 0 Then
+Text11.Text = 2
+Else
+If Check4.Value = 0 And Check2.Value = 0 Then
+Text11.Text = 2
+Else
+
+If Check4.Value = 0 And Check1.Value = 0 Then
+Text11.Text = 2
+Else
+If Check4.Value = 0 And Check5.Value = 0 Then
+Text11.Text = 2
+Else
+If Check5.Value = 0 And Check1.Value = 0 Then
+Text11.Text = 2
+Else
+If Check5.Value = 0 And Check4.Value = 0 Then
+Text11.Text = 2
+Else
+If Check5.Value = 0 And Check2.Value = 0 Then
+Text11.Text = 2
+Else
+If Check1.Value = 0 Or Check2.Value = 0 Or Check4.Value =
+0 Or Check5.Value = 0 Then
+Text11.Text = 1
+Else
+Text11.Text = 0
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+End If
+If Text1.Text = "" Or Text2.Text = "" Or Text9.Text = "" Or
+Text10.Text = "" Or Combo1 = "" Or Combo2.Text = ""
+Then
+MsgBox " Some Compulsary Fields are left blank!!!",
+vbExclamation, "Error"
+End If
+Text13.Text = (Text11.Text * Text12.Text) + (Text15.Text *
+Text16.Text)
+Text14.Text = Text11.Text * Text12.Text + Text15.Text *
+Text16.Text + 10
+Form5.Label57 = Text14.Text
+Form5.Label55 = Text13.Text
+Form12.Label64 = Text13.Text
+Form12.Label62 = Text14.Text
+
+End Sub
+
+
+Private Sub Picture2_DblClick()
+If Check1.Value = 1 Then
+Form5.Label51 = Text16.Text
+Else
+Form5.Label51 = Text12.Text
+End If
+ If Check2.Value = 1 Then
+Form5.Label52 = Text16.Text
+Else
+Form5.Label52 = Text12.Text
+End If
+ If Check4.Value = 1 Then
+Form5.Label53 = Text16.Text
+Else
+Form5.Label53 = Text12.Text
+End If
+ If Check5.Value = 1 Then
+Form5.Label54 = Text16.Text
+Else
+Form5.Label54 = Text12.Text
+End If
+If Text1.Text = "" Or Text2.Text = "" Or Text9.Text = "" Or
+Text10.Text = "" Or Combo1 = "" Or Combo2.Text = ""
+Then
+MsgBox " Some Compulsary Fields are left blank!!!",
+vbExclamation, "Error"
+Else: Form5.Show
+End If
+Unload Me
+End Sub
+
+
+
+
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+Private Sub Text4_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+Private Sub Text6_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text8_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text9_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+JOURNEY DETAILS/PASSENGER DETAILS
+
+            (FORM 5)
+Dim X, Y As Integer
+Dim rs As New ADODB.Recordset
+Dim rs1 As New ADODB.Recordset
+Dim rs2 As New ADODB.Recordset
+Dim con As New ADODB.Connection
+
+
+Private Sub Combo1_Change()
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+If Not (KeyAscii >= Asc("a") And KeyAscii <= Asc("z") Or
+(KeyAscii >= Asc("A") And KeyAscii <= Asc("Z") Or
+KeyAscii = Asc(vbBack))) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Command1_Click()
+Form3.Show
+Unload Me
+End Sub
+
+Private Sub Command2_Click()
+
+rs.Open "select * from delhi where Source='" & Label13 & "'
+and Destination='" & Label24 & "'", con, adOpenDynamic,
+adLockOptimistic, adCmdText
+Set Text1.DataSource = rs
+Set Text2.DataSource = rs
+Text1.DataField = "Seat No"
+Text2.DataField = "Coach No"
+rs.Close
+Form11.Label27 = Text1.Text
+Form12.Label21 = Text2.Text
+Form11.Label21 = Text2.Text
+Form12.Label27(0) = Text1.Text
+
+If Combo1.Text = "HDFC Bank" Then
+Form10.Show
+End If
+If Combo1.Text = "Punjab National Bank" Then
+Form7.Show
+End If
+If Combo1.Text = "Axis Bank" Then
+form8.Show
+End If
+If Combo1.Text = "SBI Bank" Then
+Form9.Show
+End If
+Form7.Label11 = Label57
+form8.Label11 = Label57
+Form9.Label11 = Label57
+Form10.Label11 = Label57
+Form11.Label17 = Label57
+Form11.Label32 = Label45
+Form11.Label33 = Label41
+Form11.Label34 = Label37
+Form11.Label35 = Label33
+Form12.Label62 = Label57
+Unload Me
+End Sub
+
+Private Sub Command3_Click()
+Form3.Combo1.Text = " "
+Form3.Combo2.Text = " "
+Form3.Combo4.Text = " "
+Form3.Text1.Text = " "
+Form3.Text2.Text = " "
+
+Form3.Combo3.Text = " "
+
+
+Form2.Text1.Text = ""
+Form2.Text2.Text = ""
+Form2.Text3.Text = ""
+Form2.Text4.Text = ""
+Form2.Text5.Text = ""
+Form2.Text6.Text = ""
+Form2.Text7.Text = ""
+Form2.Text8.Text = ""
+Form2.Combo1.Text = ""
+Form2.Combo2.Text = ""
+Form2.Combo3.Text = ""
+Form2.Combo4.Text = ""
+Form2.Combo5.Text = ""
+Form2.Combo6.Text = ""
+Form2.Combo7.Text = ""
+Form2.Combo8.Text = ""
+Form2.Label3 = ""
+Form2.Label5 = ""
+Form2.Label7 = ""
+Form2.Label9 = ""
+Form2.Label11 = ""
+Label20 = ""
+Label22 = ""
+Label21 = ""
+Label24 = ""
+Label13 = ""
+Form3.Show
+Unload Me
+End Sub
+
+Private Sub Form_Load()
+Set con = New ADODB.Connection
+con.Provider = "Microsoft.Jet.OLEDB.4.0"
+con.ConnectionString = "Data Source=" & App.Path &
+"\Database2.mdb"
+con.Open
+rs.Open "select distinct Source from delhi", con,
+adOpenDynamic, adLockOptimistic, adCmdText
+rs.Close
+End Sub
+PAYMENT FROM PNB
+
+    (FORM 7)
+Private Sub Command1_Click()
+If Text2.Text = "" Or Text3.Text = "" Or Text4.Text = "" Or
+Text5.Text = "" Or Text6.Text = "" Or Text7.Text = "" Or
+Text9.Text = "" Then
+MsgBox "Some fields are Missing ", vbExclamation, "Error"
+Text2.SetFocus
+Else:
+Form11.Show
+Unload Me
+End If
+End Sub
+
+Private Sub Command2_Click()
+Form5.Show
+Unload Me
+End Sub
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+
+Private Sub Text3_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text4_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+Private Sub Text5_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+Private Sub Text7_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text8_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+Private Sub Text9_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Timer1_Timer()
+If (Label9.Left + Label9.Width) <= 0 Then
+   Label9.Left = Me.Width
+   End If
+
+  Label9.Left = Label9.Left - 25
+End Sub
+PAYMENT BY AXIS BANK
+
+      (FORM 8)
+Private Sub Command1_Click()
+If Text2.Text = "" Or Text3.Text = "" Or Text4.Text = "" Or
+Text5.Text = "" Or Text6.Text = "" Or Text7.Text = "" Or
+Text9.Text = "" Then
+MsgBox "Some fields are Missing ", vbExclamation, "Error"
+Text2.SetFocus
+Else: Form11.Show
+Unload Me
+End If
+End Sub
+Private Sub Command2_Click()
+Form5.Show
+Unload Me
+End Sub
+
+
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+
+Private Sub Text3_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+Private Sub Text4_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text5_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text7_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text8_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+Private Sub Text9_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Timer1_Timer()
+If (Label9.Left + Label9.Width) <= 0 Then
+   Label9.Left = Me.Width
+   End If
+
+  Label9.Left = Label9.Left - 25
+End Sub
+
+
+
+
+             PAYMENT BY SBI BANK
+                     (FORM 9)
+
+
+
+
+Private Sub Command1_Click()
+If Text2.Text = "" Or Text3.Text = "" Or Text4.Text = "" Or
+Text5.Text = "" Or Text6.Text = "" Or Text7.Text = "" Or
+Text9.Text = "" Then
+MsgBox "Some fields are Missing ", vbExclamation, "Error"
+Text2.SetFocus
+Else: Form11.Show
+Unload Me
+End If
+End Sub
+
+Private Sub Command2_Click()
+Form5.Show
+Unload Me
+End Sub
+
+
+Private Sub Timer1_Timer()
+If (Label9(1).Left + Label9(1).Width) <= 0 Then
+   Label9(1).Left = Me.Width
+   End If
+
+  Label9(1).Left = Label9(1).Left - 25
+End Sub
+
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+Private Sub Text3_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text4_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text5_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text7_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text8_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text9_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+              PAYMENT BY HDFC BANK
+
+                      (FORM 10)
+
+
+
+
+Private Sub Command1_Click()
+If Text2.Text = "" Or Text3.Text = "" Or Text4.Text = "" Or
+Text5.Text = "" Or Text6.Text = "" Or Text7.Text = "" Or
+Text1.Text = "" Or Text9.Text = "" Then
+MsgBox "Some fields are Missing ", vbExclamation, "Error"
+Text2.SetFocus
+Else:
+    Form11.Show
+Unload Me
+End If
+End Sub
+Private Sub Command2_Click()
+
+Form5.Show
+Unload Me
+End Sub
+
+Private Sub Text2_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text3_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text4_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text5_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text7_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Text8_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+
+Private Sub Text9_KeyPress(KeyAscii As Integer)
+If Not (KeyAscii >= Asc("0") And KeyAscii <= Asc("9") Or
+KeyAscii = Asc(vbBack)) Then
+KeyAscii = 0
+End If
+End Sub
+
+Private Sub Timer1_Timer()
+If (Label9.Left + Label9.Width) <= 0 Then
+   Label9.Left = Me.Width
+   End If
+
+  Label9.Left = Label9.Left - 25
+End Sub
+
+
+
+
+                     CONFIRM FORM
+                      (FORM 11)
+
+
+
+
+Private Sub Command1_Click()
+Form12.Show
+Unload Me
+End Sub
+
+Private Sub Command2_Click()
+MDIForm1.Show
+Me.Hide
+
+End Sub
+
+Private Sub Timer1_Timer()
+If (Label1.Left + Label1.Width) <= 0 Then
+   Label1.Left = Me.Width
+   End If
+
+  Label1.Left = Label1.Left - 25
+End Sub
+E-TICKET OF INDIAN RAILWAY
+    RESERVATION SYSTEM
+
+        (FORM 12)
+Private Sub Command1_Click()
+Dim BeginPage, EndPage, NumCopies, Orientation, i
+ ' Set Cancel to True.
+ CommonDialog1.CancelError = True
+ On Error GoTo ErrHandler
+ ' Display the Print dialog box.
+ CommonDialog1.ShowPrinter
+ ' Get user-selected values from the dialog box.
+ BeginPage = CommonDialog1.FromPage
+ EndPage = CommonDialog1.ToPage
+ NumCopies = CommonDialog1.Copies
+ Orientation = CommonDialog1.Orientation
+ For i = 1 To NumCopies
+ ' Put code here to send data to your printer.
+ Next
+ Exit Sub
+ErrHandler:
+ ' User pressed Cancel button.
+ Exit Sub
+End Sub
+
+Private Sub Command2_Click()
+Unload Me
+
+End Sub
+
+Private Sub Label5_Click()
+Unload Me
+Dialog.Show
+End Sub
+THANKS DIALOG FORM
+                       * TESTING *
+SOFTWARE TESTING FUNDAMENTALS:
+ Testing presents an interesting anomaly for the software engineer. Earlier in the
+software process, the engineer attempts to build software from an abstract concept
+to a tangible implementation. Now comes testing. The engineer creates a series of
+test cases that are intended to “demolish” the software that has been built.
+ Testing requires that the developer discard preconceived notions of he
+“correctness” of software just develop and overcome a conflict of interest that
+occurs when errors are uncovered.
+
+
+ Testing Objectives:-
+     There are number of rules that can serve well as testing intent of finding
+        an error
+     A good test case is one that has a high probability of finding an as-yet
+        undiscovered error.
+     A successful test is one that uncovers an as –yet undiscovered error.
+
+
+ Testing principles
+    Before applying methods to design effective test cases, a software engineer
+ must understand the basic principle that guide software testing. There is a set of
+ testing principles:
+     All tests should be traceable to organization/ customer requirements.
+     Tests should be planned long before testing begins.
+   The Pareto principle applies to software testing stated simply, the Pareto
+     principle implies that 80% of all errors uncovered during testing will
+     likely be traceable to 20% of all program modules.
+   Testing should begin “ in the small” and progress towards testing “ in the
+     large”.
+   Exhaustive testing is not possible.
+   To be more effective, testing should be conducted by an independent third
+     party.
+
+
+Test Case Design
+  Any engineered product ( and most other things) can be tested in one of the
+two ways:
+   Black Box Testing
+   White Box Testing
+
+
+Black box testing:
+Black box testing, focuses on the functional requirements of the software. That
+is, black box testing enables the software engineer to derive sets of input
+conditions that will fully exercise all functional requirements for a program.
+Black box testing is not an alternative to white box testing. Rather, it is a
+complimentary approach that is likely to uncover a different class of errors
+than white box methods.
+     Black box testing attempts to find errors in the following
+categories:
+    1. Incorrect or missing functions.
+    2. Interface errors.
+     3. Errors in data structures or external database access.
+     4. performance errors
+    Unlike white box testing, which is performed early in the testing process,
+  black box testing tends to be applied during later stages of testing. Because
+  black box testing purposely disregards control structure, attention is focused
+  on the information domain.
+
+
+  Tests are designed to answer the following questions:
+    How is functional validity tested?
+    What classes of input make good test cases?
+    Is the system particularly sensitive to certain input values?
+    How are the boundaries of data class isolated?
+    What data rates and data volume can the system tolerate?
+    What effect will specific combinations of data have on system operation?
+By applying black box techniques we derive a set of test cases that satisfy the
+following criteria:
+    Test cases that reduce, by a count that is greater than one, the number of
+      additional test cases that must be designed to achieve reasonable testing,
+      and
+    Test cases that tell us something about the presence or absence of classes
+      of errors, rather than the errors associated only with the specific test at
+      hand.
+
+
+White Box Testing:
+White-box testing, sometimes called glass-box testing, is a test case design
+methods that uses the control structure of the procedural design to derive test
+cases. Using white-box testing methods, the software engineer can derive test
+cases that:
+    Guarantee that all independent paths within a module have been exercised
+      at least once.
+    Exercise all logical decisions on their true and false sides.
+    Execute all loops at their boundaries and within their operational bounds.
+
+
+The following tests were successfully conducted:-
+
+    The first test was carried out to see whether on clicking the main menu the
+      same is loaded.
+    Whether the input form contains valid data type.
+    When the user selects the status and category of employee options if only
+      one choice is selected or more for both choice list.
+    Whether on pressing the submit button, the records is not updated to more
+      then one time?
+    Whether the displaying of records, all records of employee are shown.
+    Whether on pressing the show button once, the user could change the
+      record or not?
+    If primary key are working his boundaries or not
+
+
+    PROGRAM TESTING:
+ A program represents the logical elements of a system. For a program to run
+ satisfactorily, it must compile and test data correctly and tie in properly with
+ other program. Program testing checks for two types of errors: syntax and
+ logical. A syntax error is a program statement that violets one or more rules of
+ the language in which it is written. These errors are shown through error
+ messages generated by the computer. A logical error deals with incorrect data
+ fields, output of range items and invalid combinations. The programs are
+ checked for syntax and codes are carefully written and each logical path is
+ traced during the testing for avoiding the logical errors. No error is left for
+ correction.
+
+
+ GUI TESTING:
+Graphical User Interface is much common for today’s software because of
+reusable components provides as part of GUI development environment, the
+creation of user interface has become less time consuming and more precise. So,
+it is necessary to check the operation of all GUI based components for example
+can window open close properly, can window be resized, moved, scrolled
+properly, can menus, tool bars, buttons, icons and other controls are displayed
+properly etc.
+
+
+VALIDATION CHECKS:
+Software validation is achieved through a series of tests that demonstrate
+conformity with requirements. A test plane outline the classes of tests to be
+conducted, and a test procedure defines specific test cases that will be used in an
+attempt to uncover errors in conformity with requirements. Verification refers to
+the set of activities that ensure that software correctly implemented a specific
+function.89
+A validation check plays an important role in software testing, because these
+checks prevent software from invalid and incorrect input that is given by user.
+Whenever these checks encounter with invalid or incorrect input, the error
+message is displayed on the screen and request for correct arguments.
+                           * MAINTENANCE *
+
+       Maintenance include the modification of existing applications to correct errors
+and bugs, improve the performance or even adapt to changed environment. The
+service can be extended to include change requests from clients dealing with
+enhancements and refinements.
+
+
+       As part of the services the responsibility is keeping applications reliable and
+available on a continuous basis. This eases the key challenge of running existing
+applications, providing code maintenance and performance management. The
+maintenance model used for this service consists of the following phases and
+activities:
+
+
+       The coding phase affects both testing and maintenance profoundly. As we saw
+earlier, the time spend in coding is the small percentage of the total software cost,
+while testing and maintenance consume the major percentage. Thus, it should be
+clear that the goal during should not be to reduce the implementation cost, but the
+goal should be to reduce the cost of later phases, even if it means that the cost of this
+phase has to increase.
+                   * SECURITY OF THE SYSTEM *
+
+System security refers to the technical & procedures applied to the hardware &
+operating system to product against deliberate or accidental damage from a
+defined threat.
+
+
+    DATA SECURITY:
+
+Data security is the protection of data from loss, disclosure, modification &
+destruction. The organization that depends heavily on the use of database
+requires special control to maintain valuable information. These control are
+classified into three general categories:
+
+
+          Physical Security-Protection from fire, flood.
+          Data validation techniques necessary for the database integrity.
+
+          The common control measures are carried out through password,
+encryption & monitor users on a regular basis.
+                * FUTURE SCOPE *
+
+As far as we concern with the future aspect of this project, the scope of the
+project remains always continue in the future and further development as
+we undergoes our studies. I hope that through this small project of
+“ONLINE RAILWAY RESERVATION SYSTEM” is very helpful.
+
+Future enhancement in the project can be done as follow:
+
+   This project can work on stand alone pc. It means it is for stand alone
+     ORRS but -
+   In future it can be extend for network computers by adding ADO
+     database connectivity to the visual basic.
+
+   Search option can be added that facilities more ease to project.
+
+   Some restriction aspect like restrict one to issue certain number or
+    kind of book
+
+   It can be made more wonderful by updating it a little bit in future
+
+   Addition for report and other query services
+                * CONCLUSION *
+This project work is highly important for me, as this project has given
+me a great experience. My aim of developing this project is to have an
+understanding about the “ONLINE RAILWAY RESERVATION
+SYSTEM” and visual basic 6.0 and to get well acquainted with the
+efforts and hard work that is required for developing a project. The
+output of this project is the forms, reports and views which have being
+developed for the end user which will provide all the relevant details.
+This project is very flexible and it can be modified if the need arises.
+We hope that the user will find this project work quite pleasing in its
+functionality. We are sure that the users of this project will like our
+effort.
+                 * BIBLIOGRAPHY *
+
+           BOOKS                                AUTHOR
+1- Mastering in VB6.0                 Evangeious Petrouisos
+2- VB Programming (Black Book)        Steven Holzner
+3- Developing Desktop Application
+   Using VB6.0 (NIIT)
+4- Hands On Visual Basic              BPB Publications
+5- Visual Basics Projects with Data
+   Base
+
